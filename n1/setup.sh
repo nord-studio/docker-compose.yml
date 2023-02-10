@@ -38,7 +38,7 @@ if [ -x "$(command -v node)" ]; then
     echo "Node.js is already installed on $ver, please make sure you are using LTS or higher."
 else
     echo "Installing Node.js"
-    curl -fsSL https://deb.nodesource.com/setup_16.x | bash - &&\ > /dev/null
+    curl -fsSL https://deb.nodesource.com/setup_16.x | bash > /dev/null
     apt-get update > /dev/null
     apt-get install -y nodejs > /dev/null
 fi
